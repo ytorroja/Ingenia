@@ -1,0 +1,79 @@
+{
+    "files.associations": {
+        "*.pde": "java"
+    },
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.sources.organizeImports.starThreshold": 99,
+    "java.sources.organizeImports.staticStarThreshold": 99,
+    "java.completion.enabled": false,
+    "java.signatureHelp.enabled": false,
+    "java.contentProvider.preferred": "fernflower",
+    "java.configuration.runtimes": [],
+    "java.import.gradle.enabled": false,
+    "java.import.maven.enabled": false,
+    "java.autobuild.enabled": false,
+    "java.maxConcurrentBuilds": 1,
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m",
+    "java.import.generatesMetadataFilesAtProjectRoot": false,
+    "java.configuration.maven.userSettings": null,
+    "java.maven.downloadSources": false,
+    "java.maven.updateSnapshots": false,
+    "java.references.includeDecompiledSources": false,
+    "java.trace.server": "off",
+    "java.configuration.detectJdksAtStart": false,
+    "java.import.exclusions": [
+        "**/node_modules/**",
+        "**/.metadata/**",
+        "**/archetype-resources/**",
+        "**/META-INF/maven/**",
+        "**/*.pde"
+    ],
+    "java.project.sourcePaths": [],
+    "java.project.referencedLibraries": [],
+    "editor.semanticHighlighting.enabled": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.control",
+                "settings": {
+                    "foreground": "#02a388",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "support.function",
+                "settings": {
+                    "foreground": "#0066CC"
+                }
+            },
+            {
+                "scope": "variable.other",
+                "settings": {
+                    "foreground": "#CC6600"
+                }
+            },
+            {
+                "scope": "constant.numeric",
+                "settings": {
+                    "foreground": "#0387a8"
+                }
+            },
+            {
+                "scope": "string.quoted.double",
+                "settings": {
+                    "foreground": "#009900"
+                }
+            },
+            {
+                "scope": "comment.line",
+                "settings": {
+                    "foreground": "#666666",
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    }
+}

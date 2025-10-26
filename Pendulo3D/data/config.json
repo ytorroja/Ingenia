@@ -1,0 +1,22 @@
+{
+  "audio_files": [
+    "do3",
+    "do3",
+    "re3",
+    "re3",
+    "mi3",
+    "fa3",
+    "fa3",
+    "sol3",
+    "sol3",
+    "la3",
+    "la3",
+    "si3"
+  ],
+  "audio_folder": "piano/",
+  "volumeGlb": 0.8999999761581421,
+  "minAngleGlb": 0.05000000074505806,
+  "dtGlb": 0.30000001192092896,
+  "drag": 0.05000000074505806,
+  "hitForfeGlb": 0.4000000059604645
+}

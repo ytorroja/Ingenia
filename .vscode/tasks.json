@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Abrir Processing IDE",
+            "type": "shell",
+            "command": "explorer",
+            "args": [
+                "${workspaceFolder}\\${input:projectName}"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Crear Nuevo Proyecto Processing",
+            "type": "shell",
+            "command": "mkdir",
+            "args": [
+                "${input:newProjectName}"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "projectName",
+            "description": "Nombre del proyecto a abrir",
+            "default": "Pendulo3D",
+            "type": "pickString",
+            "options": [
+                "Pendulo3D",
+                "NuevoProyecto"
+            ]
+        },
+        {
+            "id": "newProjectName",
+            "description": "Nombre del nuevo proyecto",
+            "type": "promptString"
+        }
+    ]
+}
