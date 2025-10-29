@@ -59,7 +59,7 @@ void loadConfig(String filename) {
   JSONArray setsArray = config.getJSONArray("soundSets");
 
   int numSets = setsArray.size();
-  soundSets = new String[numSets];
+  //soundSets = new String[numSets];
 
   for (int i = 0; i < numSets; i++) {
     JSONObject setObj = setsArray.getJSONObject(i);
@@ -69,21 +69,17 @@ void loadConfig(String filename) {
 
     // Archivos
     JSONArray filesArray = setObj.getJSONArray("files");
-    soundFiles[i] = new String[filesArray.size()];
+    //soundFiles[i] = new String[filesArray.size()];
     for (int j = 0; j < filesArray.size(); j++) {
       soundFiles[i][j] = filesArray.getString(j);
     }
 
     // Volúmenes
     JSONArray volumesArray = setObj.getJSONArray("volumes");
-    soundVolumes[i] = new float[volumesArray.size()];
+    //soundVolumes[i] = new float[volumesArray.size()];
     for (int j = 0; j < volumesArray.size(); j++) {
       soundVolumes[i][j] = volumesArray.getFloat(j);
     }
-
-    audio_folder  = soundSets[currentSoundSet];
-    audio_files = soundFiles[currentSoundSet];
-    audio_volumes = soundVolumes[currentSoundSet];
   }
 
   println("Config. loaded from " + filename);
